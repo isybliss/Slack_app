@@ -1,0 +1,637 @@
+* {
+  font-family: "Roboto", sans-serif;
+  --purple-color: #611f69;
+  --white-color: #fff;
+  --black-color: #1d1d1d;
+  --light-gray-color: #f6f0e8;
+  --blue-color: #1264a3;
+  --dark-gray-color: #f5f5f5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--black-color);
+  background-color: var(--white-color);
+  font-family: "Roboto", "Ubuntu", sans-serif;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+video {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+header {
+  height: 15vh;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--white-color);
+}
+
+.header-container {
+  margin: 2em auto;
+  display: grid;
+  grid-template-columns: 150px auto;
+}
+
+.logo {
+  width: 120px;
+  margin-top: -0.5em;
+}
+
+.menu-nav,
+.app-icon {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar li {
+  padding: 0 0.8em;
+}
+
+.navbar li .modal-menu {
+  display: none;
+}
+
+#modal_menu.menu-bt {
+  display: block;
+}
+
+.modal-menu {
+  flex-direction: column;
+  border: 1px solid var(--light-gray-color);
+  width: 180px;
+  padding: 0.8em 1em;
+  background-color: var(--white-color);
+}
+
+.modal-menu li {
+  padding: 0.6em 0;
+  font-size: 0.95rem;
+}
+
+.modal-menu li:hover {
+  color: var(--blue-color);
+}
+.navbar a {
+  font-size: 0.95rem;
+}
+
+.cta {
+  border: 2px solid var(--purple-color);
+  border-radius: 0.2rem;
+  background-color: var(--purple-color);
+  color: var(--white-color);
+  display: inline-block;
+  padding: 0.6em 2.5em;
+  font-weight: 700;
+  text-align: center;
+  margin-top: -1em;
+}
+
+.hero-section {
+  margin-top: 15vh;
+  background-color: var(--light-gray-color);
+}
+
+.hero {
+  display: flex;
+  padding-bottom: 3em;
+}
+
+.hero-video {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 1em;
+  align-self: center;
+}
+
+.hero-article {
+  width: 70%;
+  margin-top: 0.5em;
+}
+
+h1 {
+  width: 77%;
+  margin-top: 0.2em;
+  margin-bottom: 0;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+.hero-article p {
+  font-size: 1.23rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+  width: 79.6%;
+  margin-bottom: 1.5em;
+}
+
+.button-cta {
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 1.1em 2.7em;
+}
+
+.switch-1 {
+  width: 38%;
+}
+
+.switch-1 h1 {
+  width: 91.6%;
+}
+
+.switch-1 p {
+  font-size: 1.2rem;
+  width: 94.75%;
+}
+
+.switch-2 {
+  margin-right: 4em;
+}
+
+.features-cta {
+  background-color: transparent;
+  color: var(--purple-color);
+}
+
+.heading {
+  text-align: center;
+  width: 73.2%;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 3.2rem;
+  margin-bottom: 0.5em;
+}
+
+.see-cta a {
+  display: inline-block;
+  color: var(--blue-color);
+  font-weight: 500;
+  font-size: 1rem;
+  margin-right: 0.3em;
+}
+
+.arrow {
+  color: var(--blue-color);
+  font-weight: 500;
+  font-size: 1.25rem;
+  transform: translateY(0.2em);
+}
+.see-cta {
+  margin-bottom: 3em;
+}
+
+.see-cta:hover {
+  border-bottom: 2px solid var(--blue-color);
+  display: inline-block;
+}
+
+.brand-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.customer-stories {
+  font-style: italic;
+  font-size: 1.7rem;
+  line-height: 1.4em;
+  letter-spacing: -0.3px;
+  font-weight: 300;
+  width: 82.5%;
+  margin-bottom: 0.6em;
+}
+
+.customer-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.customer-position {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--black-color);
+}
+
+.customer-image {
+  width: 100%;
+}
+
+.brands {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 3em;
+  width: 92%;
+}
+
+.brands img {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 4em;
+}
+
+.subscribe-section {
+  background-color: var(--purple-color);
+  color: var(--white-color);
+  text-align: center;
+  padding: 3em 0;
+}
+
+.subscribe-section h2 {
+  width: 93%;
+  margin: auto;
+  font-weight: 600;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.subscribe-cta {
+  border: none;
+  background-color: var(--white-color);
+  color: var(--purple-color);
+}
+
+.contact-cta {
+  border: 1px solid var(--white-color);
+}
+
+.subscribe-cta,
+.contact-cta {
+  margin-right: 1em;
+  margin-bottom: 4em;
+  width: unset;
+  padding: 1.2em 4.5em;
+}
+
+.menu-section {
+  background-color: var(--white-color);
+}
+
+.slack-logo {
+  display: block;
+  margin-left: -1.3em;
+}
+
+.menu-section .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 4em;
+}
+
+.menu-lists {
+  width: 72%;
+  display: inline-grid;
+  grid-auto-columns: auto;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-gap: 1em;
+  margin-bottom: 4em;
+}
+
+.menu-list h4 {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.menu-list li {
+  font-size: 0.8rem;
+  padding: 0.7em;
+  font-weight: 300;
+}
+
+.search-section {
+  background-color: var(--dark-gray-color);
+  padding: 2em 0;
+}
+
+.search-section a {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.icons {
+  font-size: 1.6rem;
+}
+
+.web {
+  font-size: 1.2rem;
+}
+
+.region {
+  margin-top: -0.2em;
+}
+
+.search-section a:hover {
+  color: var(--blue-color);
+}
+
+.search-section nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-section ul {
+  display: flex;
+}
+
+.search-section li {
+  padding-right: 1.5em;
+}
+
+footer {
+  border: 1px solid #ebeaeb;
+  background: #ebeaeb;
+  margin: 0;
+  text-align: left;
+}
+
+footer p {
+  padding: 0.5em 0;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #454545;
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar {
+    display: none;
+  }
+
+  .app-icon {
+    display: block;
+    width: 40px;
+  }
+
+  header .container {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #nav-bar.menu-btn {
+    display: block;
+  }
+
+  .navbar {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    right: 0;
+    top: 0;
+    background-color: #fdfdfd;
+    height: 100vh;
+    padding-top: 2em;
+  }
+  .menu-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1.5em;
+  }
+
+  .mobile-menu-exit {
+    width: 30px;
+  }
+
+  .primary-nav {
+    flex-direction: column;
+    margin-top: 4em;
+  }
+
+  .primary-nav a {
+    color: var(--black-color);
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 1.8em 2em;
+  }
+
+  .modal-menu li {
+    display: none;
+  }
+
+  .secondary-nav a {
+    display: none;
+  }
+
+  .switch-1 p {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero-video {
+    margin-top: 3em;
+  }
+
+  .customer-stories {
+    margin-right: 1em;
+    width: 123px;
+  }
+
+  .customer-image {
+    width: 100%;
+  }
+
+  .menu-section .container {
+    flex-direction: column;
+    margin-top: 2em;
+  }
+
+  .slack-logo {
+    margin-left: -2em;
+  }
+
+  .menu-lists {
+    grid-template-columns: repeat(4, 30%);
+    grid-gap: 2em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  .hero-section {
+    padding-top: 1em;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-article {
+    width: unset;
+    margin: 0 auto;
+  }
+
+  h1 {
+    width: unset;
+    max-width: 480px;
+    font-size: 3rem;
+    padding-top: 0.1em;
+    line-height: 3.2rem;
+    margin-bottom: 0.6em;
+  }
+
+  .hero-article p {
+    width: unset;
+    max-width: 430px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.2px;
+    margin-bottom: 2.5em;
+  }
+
+  .cta {
+    width: 100%;
+  }
+
+  .hero-video {
+    width: 100%;
+    margin-bottom: 3em;
+    margin-left: 5em;
+  }
+
+  .switch-1 {
+    order: 1;
+  }
+
+  .switch-2 {
+    order: 2;
+    margin-bottom: 0.4em;
+  }
+
+  .heading {
+    width: unset;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 2rem;
+    padding: 0.3em 0;
+  }
+
+  .see-cta {
+    margin-bottom: 2em;
+  }
+
+  .brand-flex {
+    flex-direction: column;
+  }
+
+  .customer {
+    width: unset;
+  }
+
+  .customer-stories {
+    width: unset;
+    font-size: 1.17rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.5em;
+  }
+
+  .customer-name {
+    font-size: 1rem;
+    letter-spacing: 0.02rem;
+  }
+
+  .customer-position {
+    margin-top: -0.5em;
+    font-size: 1rem;
+    margin-bottom: 2em;
+  }
+
+  .customer-image {
+    width: 100%;
+    margin-right: em;
+  }
+
+  .brands {
+    width: 100%;
+    margin-top: 3.5em;
+    margin-bottom: 4.5em;
+    text-align: left;
+  }
+
+  .brands img {
+    padding: 2em 1.3em 0 0;
+  }
+
+  .subscribe-section {
+    padding: 2em 0;
+  }
+
+  .subscribe-cta {
+    margin-bottom: 2em;
+  }
+
+  .menu-lists {
+    grid-template-columns: 55% 45%;
+    grid-gap: 3em;
+  }
+
+  .search-section nav {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .search-section ul {
+    width: 66.2%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .search-section li {
+    padding: 1em;
+  }
+
+  .region {
+    padding-top: 2em;
+  }
+
+  footer {
+    text-align: center;
+  }
+  footer p {
+    padding: 0.4em 0;
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+}
