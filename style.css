@@ -438,9 +438,9 @@ footer p {
     font-weight: 400;
     padding: 1.8em 2em;
   }
-
-  .modal-menu li {
-    display: none;
+  
+  #modal_menu.menu-bt {
+  display: block;
   }
 
   .secondary-nav a {
